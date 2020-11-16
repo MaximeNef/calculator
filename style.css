@@ -1,0 +1,33 @@
+.flex{
+  display: flex;
+  flex-direction: column;
+  border-color: black;
+  border-style: double;
+  max-width: 40%;
+  
+}
+
+.result{
+    display: flex;
+    font-size: 170px;
+    justify-content: flex-end;
+    border-style:ridge;
+    margin: 1%;
+    height: 200px;
+}
+.flexC{
+    display: flex;
+    justify-content: space-around;
+    
+    
+}
+
+.button{
+    font-size: 200%;
+    margin: 1%;
+    background-color: #D9DCE0;
+    border-style: groove;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+}
