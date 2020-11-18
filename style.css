@@ -2,6 +2,16 @@
 body{
     display: flex;
     justify-content: center;
+    background-image: url(https://images6.alphacoders.com/455/thumb-350-455565.png);
+    background-repeat: repeat ;
+    flex-direction: row-reverse;
+    
+
+    
+}
+.allinfo{
+    display: flex;
+    flex-direction: column;
     
 }
 .flex{
@@ -13,6 +23,24 @@ body{
   box-shadow: 5px 10px 20px;
   background-image: linear-gradient(to right, #833ab4,#fd1d1d, #fcb045 );
   border-radius: 50px;
+  height: 700px;
+}
+
+
+.historic{
+    display: flex;
+    visibility: visible;
+    background-color: white;
+    height: 670px;
+    width: 200px;
+    border: solid;
+    border-radius: 50px;
+    padding-top: 20px;
+    padding-left: 10px;
+    font-size: 30px;
+
+
+    
 }
 
 .result{
@@ -72,6 +100,7 @@ body{
     border-radius: 40px;
     box-shadow: 5px 10px 20px;   
     cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 .button:hover{
     background-color: gray;
