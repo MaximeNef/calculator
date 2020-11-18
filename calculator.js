@@ -21,15 +21,18 @@ const BIG_HISTORIC = document.createElement("div");
 BIG_HISTORIC.className = "historic";
 
 let buttonhide = document.createElement("BUTTON");
-buttonhide.innerHTML = "CLICK ME";
+
+buttonhide.innerHTML = "HISTORIQUE DES OPERATIONS";
 BIG_CONTAINER.appendChild(buttonhide);
 buttonhide.addEventListener("click", function () {
   const historique = document.getElementsByClassName("historic")[0];
-  console.log(BIG_HISTORIC.style.visibility);
-  if (historique.style.visibility === "hidden") {
-    historique.style.visibility = "visible";
-  } else if (historique.style.visibility === "visible") {
-    historique.style.visibility = "hidden";
+  console.log(BIG_HISTORIC.style.display);
+  if (historique.style.opacity === "1") {
+    //historique.style.display = "none";
+    historique.style.opacity = "0";
+  } else {
+    //historique.style.display = "block";
+    historique.style.opacity = "1";
   }
 });
 
@@ -105,6 +108,7 @@ for (let i = 0; i < tab.length; i++) {
       button.addEventListener("click", function () {
         afficheResult.innerHTML = "";
         afficheHistorique.innerHTML = "";
+        BIG_HISTORIC.innerHTML += "<br>";
 
         if (!noDoubleDots) {
           noDoubleDots = true;
@@ -123,6 +127,7 @@ for (let i = 0; i < tab.length; i++) {
           .toString()
           .slice(0, -1);
         BIG_HISTORIC.innerHTML = BIG_HISTORIC.innerHTML.toString().slice(0, -1);
+        
 
         if (!noDoubleDots) {
           noDoubleDots = true;

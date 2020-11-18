@@ -1,122 +1,124 @@
-
-body{
-    display: flex;
-    justify-content: center;
-    background-image: url(https://images6.alphacoders.com/455/thumb-350-455565.png);
-    background-repeat: repeat ;
-    flex-direction: row-reverse;
-    
-
-    
+body {
+  display: flex;
+  justify-content: center;
+  background-color: #191F28;
+  flex-direction: row-reverse;
 }
-.allinfo{
-    display: flex;
-    flex-direction: column;
-    
-}
-.flex{
+
+.allinfo {
   display: flex;
   flex-direction: column;
-  border-color: black;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+  border-color: #374040;
   border-style: double;
   width: 40%;
   box-shadow: 5px 10px 20px;
-  background-image: linear-gradient(to right, #833ab4,#fd1d1d, #fcb045 );
+  background-color: #374040;
   border-radius: 50px;
   height: 700px;
 }
 
-
-.historic{
-    display: flex;
-    visibility: visible;
-    background-color: white;
-    height: 670px;
-    width: 200px;
-    border: solid;
-    border-radius: 50px;
-    padding-top: 20px;
-    padding-left: 10px;
-    font-size: 30px;
-
-
-    
+BUTTON {
+  border-radius: 20px;
+  width: 210px;
 }
 
-.result{
-    display: flex;
-    font-size: 60px;
-    justify-content: flex-end;
-    border-style:ridge;
-    margin: 1%;
-    height: 120px;
-    color: black;
-    background-color: white;
-    padding-right: 45px;
-   word-wrap: break-word;
-   word-break: break-all;
-   align-items: center;
-
-}
-.affiche{
-    display: flex;
-    font-size: 50px;
-    justify-content: flex-end;
-    border-style:ridge;
-    margin: 1%;
-    height: 70px;
-    color: black;
-    background-color: white;
-    border-top-left-radius: 50px;
-    border-top-right-radius: 50px;
-    padding-right: 40px;
-    word-wrap: break-word;
-    word-break: break-all;
-    
+.historic {
+  display: block;
+  background-color: white;
+  height: 640px;
+  width: 200px;
+  border: solid;
+  border-radius: 50px;
+  padding-top: 20px;
+  padding-left: 10px;
+  font-size: 30px;
+  box-shadow: 5px 10px 20px;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
 }
 
-.histo{
-    display: flex;
-    font-size: 70px;
-    justify-content: flex-end;
-    border-style:ridge;
-    margin: 1%;
-    height: 100px;
-    
+.result {
+  display: flex;
+  font-size: 60px;
+  justify-content: flex-end;
+  border-style: ridge;
+  margin: 1%;
+  height: 120px;
+  color: black;
+  background-color: white;
+  padding-right: 45px;
+  word-wrap: break-word;
+  word-break: break-all;
+  align-items: center;
 }
-.flexC{
-    display: flex;
-    justify-content: space-around;   
-}
-
-.button, .egale,.operation,.delete{
-    font-size: 200%;
-    margin: 1%;
-    background-color: #D9DCE0;
-    border-style: groove;
-    padding: 20px;
-    width: 90%;
-    text-align: center;
-    border-radius: 40px;
-    box-shadow: 5px 10px 20px;   
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-}
-.button:hover{
-    background-color: gray;
-}
-
-.egale{
-    background-color: coral;
+.affiche {
+  display: flex;
+  font-size: 50px;
+  justify-content: flex-end;
+  border-style: ridge;
+  margin: 1%;
+  height: 70px;
+  color: black;
+  background-color: white;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding-right: 40px;
+  word-wrap: break-word;
+  word-break: break-all;
 }
 
-.egale:hover{
-    background-color: tomato;
+.histo {
+  display: flex;
+  font-size: 70px;
+  justify-content: flex-end;
+  border-style: ridge;
+  margin: 1%;
+  height: 100px;
+}
+.flexC {
+  display: flex;
+  justify-content: space-around;
 }
 
-.operation{
-    background-color: goldenrod;
+.button,
+.egale,
+.operation,
+.delete {
+  font-size: 200%;
+  margin: 1%;
+  background-color: #d9dce0;
+  border-style: groove;
+  padding: 20px;
+  width: 90%;
+  text-align: center;
+  border-radius: 40px;
+  box-shadow: 5px 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
 }
-.operation:hover{
-    background-color: darkgoldenrod;
+ .button:hover {
+  background-color: gray;
+}
+.delete:hover{
+background-color:gray ;
+}
+
+.egale {
+  background-color: #3A303C;
+}
+
+.egale:hover {
+  background-color: #3a303c00;
+}
+
+.operation {
+  background-color: #B0A878;
+}
+.operation:hover {
+  background-color: #F2E393;
 }
